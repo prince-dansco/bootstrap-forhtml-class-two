@@ -1,83 +1,257 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Net Ninja Pro - the Book</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finoweek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      section {
-        padding: 60px 0;
-      }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .stats {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+        .about {
+            padding: 100px 0;
+        }
+        .team {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+        }
+        .dream {
+            padding: 100px 0;
+        }
+        .blog {
+            background-color: #f0f4f8;
+            padding: 100px 0;
+        }
+        .footer {
+            background-color: #0d1b2a;
+            color: white;
+            padding: 50px 0;
+        }
+        .btn-orange {
+            background-color: #fd7e14;
+            border-color: #fd7e14;
+            color: white;
+        }
+        .btn-orange:hover {
+            background-color: #e76b0c;
+            border-color: #e76b0c;
+        }
     </style>
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
-      <div class="container-lg">
-        <!-- navbar brand / title -->
-        <a class="navbar-brand" href="#intro">
-          <span class="text-secondary fw-bold">
-            <i class="bi bi-book-half"></i>
-           princewill
-          </span>
-        </a>
-        <!-- toggle button for mobile nav -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+</head>
+<body>
 
-        <!-- navbar links -->
-        <div
-          class="collapse navbar-collapse justify-content-end align-center"
-          id="main-nav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#topics">About The Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Get in Touch</a>
-            </li>
-            <li class="nav-item d-md-none">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="btn btn-secondary" href="#pricing">buy now</a>
-            </li>
-          </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Finoweek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-orange ms-3">Get Started</a>
+            </div>
         </div>
-      </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>We value human, organizational, and operational intelligence, not just artificial.</h1>
+                    <a href="#" class="btn btn-orange mt-3">Our Story</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098085/Image_1_ehqec1.png" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h2>50+</h2>
+                    <p>Projects</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>34</h2>
+                    <p>Employees</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>150+</h2>
+                    <p>Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-  </body>
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>We want to get local entrepreneurs in this era of global citizenship.</h2>
+                    <p>Transparency in everything we do.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098085/Image_2_rfxxhc.png" alt="About Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="text-center mb-5">Teamwork is the only way we work</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098085/Image_3_r5uv56.png" alt="Team Member 1" class="img-fluid mb-2">
+                    <h5>John Doe</h5>
+                    <p>CEO</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098085/Image_4_uznl4v.png" alt="Team Member 2" class="img-fluid mb-2">
+                    <h5>Jane Smith</h5>
+                    <p>CTO</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098093/Image_6_w5isup.png" alt="Team Member 3" class="img-fluid mb-2">
+                    <h5>Mike Johnson</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755099039/Image_4_1_sykaln.png" alt="Team Member 4" class="img-fluid mb-2">
+                    <h5>Sara Lee</h5>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Section -->
+    <section class="dream">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Finoweek Was A Dream</h2>
+                    <h3>To Work With</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098084/Image_8_pk0bxf.png" alt="Dream Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Blog & News</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098084/Image_9_jqpdco.png" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Why you have to digitalize in 2021</h5>
+                            <p class="card-text">Our internal process and long-term vision.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098084/Image_10_ulzrh6.png" class="card-img-top" alt="Blog 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Our internal process and long-term vision</h5>
+                            <p class="card-text">We all know how important it is.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/dtedz42mh/image/upload/v1755098084/Image_11_g4zt1g.png" class="card-img-top" alt="Blog 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Helping the next generation of leaders</h5>
+                            <p class="card-text">Our internal process and long-term vision.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Finoweek Software Solutions</h5>
+                    <p><i class="bi bi-twitter"></i> @finoweek</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Careers</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Jobs</a></li>
+                        <li><a href="#" class="text-white">Internships</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Join Newsletter</h5>
+                    <form>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                        <button type="submit" class="btn btn-orange mt-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2025 Finoweek. All rights reserved. | Privacy Policy | Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
