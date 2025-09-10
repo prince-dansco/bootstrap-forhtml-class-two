@@ -1,0 +1,42 @@
+/* Base Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: 'popinc' , sans-serif;
+    align-content: center;
+
+}
+.main {
+    align-items: center;
+    background-color: #1b0a5800;
+    min-height: 50%;
+    width: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 40px;
+    align-items: center;
+
+}
+.profil-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50px; 
+    object-fit:"cover";
+    padding: 0px;
+    margin-left: 0px;
+    border-radius: 600px;
+}
+.contact-btn{
+    padding: 5.1rex;
+    margin: 3px;
+    width: 2000px;
+
+
+    
+}
+.skills{
+    margin: 10px;
+    padding: 10px;
+    margin: 20px;
+}

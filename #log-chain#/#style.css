@@ -1,0 +1,196 @@
+:root{
+  --brand:#0a2640;          /* deep blue footer */
+  --light:#f6f9fc;          /* very light section bg */
+  --muted:#6b7280;          /* text-muted */
+  --pill:#f59e0b;           /* orange accent */
+  --card:#ffffff;
+  --soft:#eef5fb;           /* light blue cards area */
+  --dark:#0b0b0b;
+  --radius:18px;
+}
+
+/* Base */
+body{font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;}
+.brand{letter-spacing:.3px}
+.text-muted{color:var(--muted)!important}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  padding: 110px 0;
+  min-height: 72vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.hero .overlay{
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.45));
+  z-index:0;
+}
+/* Place your hero image here */
+.hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background: url(/* HERO IMAGE: e.g. images/hero.jpg */) center/cover no-repeat;
+  z-index:-1;
+}
+
+/* ---------- SECTOR CARDS ---------- */
+.card-lift{
+  border:0; background:var(--card); border-radius:var(--radius);
+  box-shadow: 0 10px 30px rgba(10,38,64,.06);
+}
+.card-lift .card-img-top{height:200px; object-fit:cover}
+
+/* orange rounded shape at right of section */
+.pill-shape{
+  width:90px; height:140px;
+  border-radius:22px;
+  background:var(--pill);
+}
+
+/* ---------- FEATURES (Our Business) ---------- */
+.features{ 
+  background:var(--soft)
+}
+
+.feature-card{
+  background:#fff; 
+  border-radius:var(--radius);
+  padding:28px; 
+  box-shadow:0 6px 22px rgba(10,38,64,.06);
+}
+.icon-wrap{
+  width:56px; height:56px; 
+  border-radius:14px;
+  background:var(--soft); 
+  display:flex; 
+  align-items:center; 
+  justify-content:center;
+  margin-bottom:14px;
+  /* drop your icon inside with <img> if you want */
+}
+.icon-wrap img{ 
+  max-width:28px; max-height:28px
+}
+
+/* ---------- EXPERIENCE SPLIT ---------- */
+.experience .exp-media{
+  position:relative; 
+  background:#eee; 
+  min-height:380px; 
+  overflow:hidden;
+}
+.experience .exp-media .stripe{
+  position:absolute; 
+  left:0; 
+  top:0; 
+  bottom:0; 
+  width:120px; 
+  background:var(--pill);
+}
+.experience .exp-media .exp-photo{
+  position:absolute; 
+  right:12px; 
+  top:12px; 
+  bottom:12px; 
+  width:auto; 
+  height:calc(100% - 24px);
+  object-fit:cover; 
+  border-radius:14px; 
+  filter:grayscale(100%);
+}
+
+/* ---------- INFO CARD + IMAGE ---------- */
+.info-card{
+  background:#e9f2fb;
+  padding:32px; 
+  border:0; 
+  box-shadow:0 8px 26px rgba(10,38,64,.06);
+}
+.tag{
+  display:inline-block; 
+  padding:.4rem .8rem; 
+  border-radius:999px;
+  background:#fff; color:#1f2937; 
+  font-weight:600; font-size:.85rem;
+  box-shadow:0 4px 12px rgba(10,38,64,.06);
+}
+.image-card{background:#fff; box-shadow:0 8px 26px rgba(10,38,64,.06)}
+.object-fit-cover{object-fit:cover}
+
+/* ---------- CTA SPLIT ---------- */
+.cta-left{
+  min-height:320px; 
+  position:relative;
+}
+.cta-left::before{
+  content:"url(IMG-20250812-WA0063.jpg)";
+  position:absolute; 
+  inset:0;
+  background:
+    linear-gradient(0deg, rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url('IMG-20250812-WA0063.jpg') center/cover no-repeat;
+  filter:grayscale(100%);
+}
+.cta-right{
+  background:var(--pill); 
+  color:#fff; 
+  min-height:320px
+}
+
+.cta-right .btn{
+  border-radius:999px; 
+  padding:.7rem 1.3rem
+} 
+
+/* ---------- TESTIMONIAL + VIDEO ---------- */
+.avatar{
+ width:56px;
+ height:56px; 
+ object-fit:cover
+}
+
+
+.video-card{background:#eee; height:320px; overflow:hidden}
+.play-btn{
+  position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:68px; height:68px; border-radius:50%;
+  background:#fff; border:0; box-shadow:0 6px 20px rgba(0,0,0,.18);
+}
+.play-btn::before{
+  content:""; display:block; margin: auto; width:0; height:0;
+  border-left:16px solid #000; border-top:10px solid transparent; border-bottom:10px solid transparent;
+  position:relative; left:27px; top:24px;
+}
+
+/* ---------- BLOGS ---------- */
+.blog-img{
+ height:160px; 
+ object-fit:cover
+}
+
+.blog-card{
+  background:#fff; box-shadow:0 8px 26px rgba(10,38,64,.06)}
+
+/* ---------- FOOTER ---------- */
+.site-footer{background:var(--brand)}
+.footer-links a{color:#cfe1ee; text-decoration:none}
+.footer-links a:hover{color:#fff}
+.social-placeholder{
+  display:inline-block; width:36px; height:36px; border-radius:10px;
+  background:#0f3952; border:1px solid rgba(255,255,255,.15);
+}
+/* bottom bar */
+.footer-bottom{background:#0a2234}
+
+/* ---------- UTIL ---------- */
+.rounded-4{border-radius:var(--radius)!important}
+
+/* ---------- RESPONSIVE TWEAKS ---------- */
+@media (max-width: 991.98px){
+  .hero{min-height:64vh}
+  .experience .exp-media{min-height:320px}
+}
