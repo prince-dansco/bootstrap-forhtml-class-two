@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Net Ninja Pro - the Book</title>
+    <title>Services</title>
     <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
@@ -16,68 +16,303 @@
       crossorigin="anonymous"
     />
     <style>
+      
+      .first-section {
+        background-color: #fff;
+        color: #000;
+      }  
+      .dark-bg {
+        background-color: #0d1a2d;
+        color: #6ea0eb;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .footer-bg {
+        background-color: #0d1a2d;
+        color: #fff;
+      }
+      .footer-button{
+        width: 156;
+        height: 54;
+        top: 5993px;
+        left: 1258px;
+        opacity: 1;
+        border-radius: 31px;
+        background: #F58A07;
+        color: black;
+        font-family: Poppins;
+        font-weight: 600px;
+        font-size: 18px;
+        line-height: 107%;
+      letter-spacing: 0px;
+        text-transform: capitalize;
+      }
+      .footer-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .rightsh{
+        justify-self: left;
+      }
+      .py-6{
+        background: #DCEAF5;
+        opacity: 1;
+        top: 4973px;
+      }
+      .col-md-4 h5{
+      color: #F58A07;
+      }
+      .btn {
+        background-color: #F58A07;
+        border-radius: 18px;
+      }
+      
       section {
         padding: 60px 0;
       }
     </style>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
-      <div class="container-lg">
-        <!-- navbar brand / title -->
-        <a class="navbar-brand" href="#intro">
-          <span class="text-secondary fw-bold">
-            <i class="bi bi-book-half"></i>
-           princewill
-          </span>
-        </a>
-        <!-- toggle button for mobile nav -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- navbar links -->
-        <div
-          class="collapse navbar-collapse justify-content-end align-center"
-          id="main-nav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#topics">About The Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Get in Touch</a>
-            </li>
-            <li class="nav-item d-md-none">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="btn btn-secondary" href="#pricing">buy now</a>
-            </li>
-          </ul>
-        </div>
+    <header class="py-2 bg-white">
+      <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand text-dark" href="#">{finsweet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link text-dark" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Careers</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Contact Us</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn" href="#">Clone project</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="first-section py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <h1 class="display-4 fw-bold">We serve clients with ground breaking solutions</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="btn btn-warning btn-lg rounded-30">Learn More</button>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 position-relative">
+              <img src="./1.png" class="img-fluid rounded-0" alt="Team working in an office">
+              <span class="orange-circle" style="top: 20px; left: 20px;"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 position-relative">
+              <img src="./2.png" class="img-fluid rounded-0 section-image" alt="Woman talking into a microphone">
+              <span class="orange-square" style="left: 50px;"></span>
+            </div>
+            <div class="col-md-6">
+              <h2 class="fw-bold">Business strategy</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 order-md-2 position-relative">
+              <img src="./3.png" class="img-fluid rounded-0 section-image" alt="Woman working on a laptop at a desk">
+              <span class="orange-square" style="right: -20px; left: auto;"></span>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h2 class="fw-bold">Digitalization</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 position-relative">
+              <img src="./4.png" class="img-fluid rounded-0 section-image" alt="Two men in a discussion">
+              <span class="orange-square" style="left: -20px;"></span>
+            </div>
+            <div class="col-md-6">
+              <h2 class="fw-bold">Risk assessment</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 order-md-2 position-relative">
+              <img src="./5.png" class="img-fluid rounded-0 section-image" alt="A large industrial-looking structure">
+              <span class="orange-square" style="right: -20px; left: auto;"></span>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h2 class="fw-bold">Artificial Intelligence</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 position-relative">
+              <img src="./6.png" class="img-fluid rounded-0 section-image" alt="Group of people in a meeting">
+              <span class="orange-square" style="left: -20px;"></span>
+            </div>
+            <div class="col-md-6">
+              <h2 class="fw-bold">Smart Contracts</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 order-md-2 position-relative">
+              <img src="./7.png" class="img-fluid rounded-0  section-image" alt="A large industrial-looking structure">
+              <span class="orange-square" style="right: -20px; left: auto;"></span>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h2 class="fw-bold">Finsweet was a dream <br> to work with</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+              <img src="./Person.png" alt="A person">
+        </div>
+      </section>
+
+      <section class="py-6">
+        <div class="container">
+          <h2 class="text fw-bold mb-4">Latest Blog & News</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 rounded-0 border-0">
+                <img src="./10.png" class="card-img-top rounded-0" alt="Blog post image 1">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Why yo have to digitalize in <br>2021</h4>
+                  <p class="card-text"><small class="text-muted">August 14, 2025</small></p>
+                  <a href="#" class="text-decoration-none text-dark fw-bold"><h5>Learn More &rarr;</h5> </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 rounded-0 border-0">
+                <img src="./9.png" class="card-img-top rounded-0" alt="Blog post image 2">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Our internal process and <br>longerm vision</h4>
+                  <p class="card-text"><small class="text-muted">August 14, 2025</small></p>
+                  <a href="#" class="text-decoration-none text-dark fw-bold"><h5>Learn More &rarr;</h5></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 rounded-0 border-0">
+                <img src="./8.png" class="card-img-top rounded-0" alt="Blog post image 3">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Helping the next generation <br>of leaders</h4>
+                  <p class="card-text"><small class="text-muted">August 14, 2025</small></p>
+                  <a href="#" class="text-decoration-none text-dark fw-bold"><h5>Learn More &rarr;</h5></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+    <footer class="footer-bg py-5">
+      
+            <div class="container">
+        <div class="row">
+           
+          <div class="col-md-4">
+           
+              <h4 class="fw-bold">{finsweet</h4>
+            <p><h2>Bespoke software <br> solutions</h2></p> 
+            <div class="d-flex social-icons">
+              <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f"><img src="./s1.png"></i></a>
+              <a href="#" class="me-3 text-white"><i class="fab fa-twitter"><img src="./s2.png"></i></a>
+              <a href="#" class="me-3 text-white"><i class="fab fa-instagram"><img src="./s3.png"></i></a>
+              <a href="#" class="me-3 text-white"><i class="fab fa-instagram"><img src="./s4.png"></i></a>
+            </div>
+            
+          </div>
+                    
+          <div class="col-md-2 footer-links">
+            <h5 class="fw-bold">Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-links">
+            <h5 class="fw-bold">Connect</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">hi@finsweet.com</a></li>
+              <li><a href="#">+(123) 456-7890</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="fw-bold">Join Newsletter</h4>
+            <p>Join our newsletter to stay updated on our latest news and offers.</p>
+            <form>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control rounded-0-1" placeholder="Type email address" aria-label="Email address">
+              </div>
+               <button class="footer-button">Subscribe</button>
+            </form>
+          </div>
+          
+
+     
+        <div class="text-start">
+          <p class="mb-0">&copy; 2025 Company Name. Daniel John</p>
+          
+        </div>
+        
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7bEaPFGEfT83" crossorigin="anonymous"></script>
+ 
+      </section>
+    
+      
 
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
+
+    </main>
+
+
+
+    
   </body>
 </html>
